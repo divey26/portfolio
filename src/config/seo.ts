@@ -1,4 +1,4 @@
-import type { DefaultSeoProps } from 'next-seo';
+import type { DefaultSeoProps } from 'next-seo/pages';
 
 const seoConfig: DefaultSeoProps = {
   titleTemplate: "%s | Divendra Paramendran",
