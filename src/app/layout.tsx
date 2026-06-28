@@ -8,7 +8,7 @@ import { Hanken_Grotesk } from 'next/font/google';
 const hankenGrotesk = Hanken_Grotesk({ subsets: ['latin'], variable: '--font-hanken' });
 
 export const metadata: Metadata = {
-  title: 'CREATIVE.LAB | Industrial Precision Portfolio',
+  title: 'Divendra Paramendran | Portfolio',
   description: 'Portfolio of Divendra Paramendran, a Full Stack Developer specialized in scalable backend systems and AI applications.',
 };
 
