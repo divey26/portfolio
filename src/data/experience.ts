@@ -9,23 +9,25 @@ export interface ExperienceItem {
 
 export const experiences: ExperienceItem[] = [
   {
-    company: 'DGateway Innovations',
-    role: 'Backend Engineer Intern',
+    company: 'DGateway Innovations (PVT) Ltd., Sri Lanka',
+    role: 'Software Engineer Intern',
     period: 'Mar 2025 - Aug 2025',
     responsibilities: [
-      'Developed scalable REST APIs using NestJS and PostgreSQL',
-      'Implemented CI/CD pipelines with Docker and GitHub Actions',
-      'Optimized database queries, reducing latency by 30%'
+      'Completed a 6-month internship as a Software Engineer Intern, contributing to real-world production systems',
+      'Collaborated with development teams to design, develop, and maintain full-stack web applications',
+      'Gained hands-on experience in backend development, frontend integration, and role-based system design'
     ]
   },
   {
-    company: 'StudyFlow',
-    role: 'Full Stack Developer',
-    period: 'Jan 2024 - Feb 2025',
+    company: 'Internship Project',
+    role: 'Cloud-Laundry – Staff Dashboard & Invoice Management',
+    period: '',
     responsibilities: [
-      'Designed and developed a SaaS platform for online learning',
-      'Integrated Stripe payments and real-time analytics',
-      'Used React, Next.js, and Tailwind for responsive UI'
+      'Designed and developed a laundry management platform with staff dashboards and invoice tracking features',
+      'Implemented backend services for order processing, invoice generation, and customer record management using JavaScript',
+      'Built responsive front-end interfaces using HTML, CSS, and modern JavaScript frameworks',
+      'Integrated role-based access control to differentiate staff and admin functionalities',
+      'Streamlined workflows for order assignment, billing, and reporting to enhance system usability'
     ]
   }
 ];

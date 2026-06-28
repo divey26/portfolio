@@ -1,7 +1,9 @@
-
 import Hero from '../components/Hero';
 import About from '../components/About';
 import Experience from '../components/Experience';
+import Projects from '../components/Projects';
+import Skills from '../components/Skills';
+import Education from '../components/Education';
 
 export default function Home() {
   return (
@@ -10,8 +12,10 @@ export default function Home() {
       <main className="flex-grow container mx-auto px-4 py-8 space-y-16">
         <section id="hero"><Hero /></section>
         <section id="about"><About /></section>
+        <section id="skills"><Skills /></section>
         <section id="experience"><Experience /></section>
-        {/* Future sections: Projects, Skills, Contact */}
+        <section id="projects"><Projects /></section>
+        <section id="education"><Education /></section>
       </main>
     </div>
   );

@@ -6,10 +6,10 @@ import { FiGithub, FiLinkedin, FiMail } from 'react-icons/fi';
 const navLinks = [
   { href: '#hero', label: 'Home' },
   { href: '#about', label: 'About' },
+  { href: '#skills', label: 'Skills' },
   { href: '#experience', label: 'Experience' },
   { href: '#projects', label: 'Projects' },
-  { href: '#skills', label: 'Skills' },
-  { href: '#contact', label: 'Contact' },
+  { href: '#education', label: 'Education' },
 ];
 
 export default function Navbar() {

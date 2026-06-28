@@ -11,10 +11,10 @@ const Hero = () => {
       <motion.div className="text-center" variants={fadeInUp} initial="hidden" animate="visible">
         <h1 className="text-5xl md:text-6xl font-bold text-primary-500 mb-4">Divendra Paramendran</h1>
         <h2 className="text-xl md:text-2xl text-foreground mb-6">
-          Full Stack Developer | Backend Engineer | AI Application Builder
+          Software Engineer Intern | BSc in Information Technology Undergraduate
         </h2>
         <p className="text-lg text-foreground mb-8 max-w-2xl mx-auto">
-          Specializing in REST APIs, scalable backend systems, Node.js, NestJS, React, PostgreSQL.
+          Passionate about full-stack web development, machine learning, and building AI-driven scalable applications.
         </p>
         <div className="flex flex-col md:flex-row justify-center gap-4">
           <Link href="#projects" scroll={false} className="px-6 py-3 bg-primary-500 text-white rounded-md shadow-md hover:bg-primary-600 transition">
