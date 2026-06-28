@@ -1,15 +1,42 @@
+"use client";
 import React from 'react';
+import { motion, Variants } from 'framer-motion';
 
 export default function Education() {
+  const containerVariants: Variants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: { staggerChildren: 0.2 },
+    },
+  };
+
+  const itemVariants: Variants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } },
+  };
+
   return (
     <section id="education" className="py-section-gap px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
-      <div className="mb-12">
+      <motion.div 
+        className="mb-12"
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, amount: 0.2 }}
+        transition={{ duration: 0.6 }}
+      >
         <h2 className="text-headline-md text-text-primary mb-2 font-semibold">Academic & Certifications</h2>
         <div className="h-1 w-12 bg-tesla-blue"></div>
-      </div>
+      </motion.div>
       
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-gutter">
-        <div className="space-y-6">
+      <motion.div 
+        className="grid grid-cols-1 lg:grid-cols-2 gap-gutter"
+        variants={containerVariants}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.2 }}
+      >
+        <motion.div variants={itemVariants} className="space-y-6">
           <h3 className="text-sm font-bold uppercase tracking-widest text-text-secondary mb-6 border-b border-border-light pb-2">Education</h3>
           <div className="bg-surface-pure p-8 border border-border-light transition-all hover:border-black">
             <div className="flex justify-between items-start mb-2">
@@ -22,9 +49,9 @@ export default function Education() {
             <h4 className="text-lg font-bold text-text-primary mb-2">Diploma in Information Technology</h4>
             <p className="text-sm text-text-secondary">Sri Lanka Institute of Information Technology (SLIIT)</p>
           </div>
-        </div>
+        </motion.div>
 
-        <div className="space-y-6">
+        <motion.div variants={itemVariants} className="space-y-6">
           <h3 className="text-sm font-bold uppercase tracking-widest text-text-secondary mb-6 border-b border-border-light pb-2">Certifications</h3>
           <div className="bg-surface-pure p-8 border border-border-light transition-all hover:border-black flex flex-col gap-4">
             <div className="flex justify-between items-center border-b border-border-light pb-4">
@@ -42,8 +69,8 @@ export default function Education() {
               <span className="text-[10px] font-bold bg-surface-container px-3 py-1 rounded">2024</span>
             </div>
           </div>
-        </div>
-      </div>
+        </motion.div>
+      </motion.div>
     </section>
   );
 }

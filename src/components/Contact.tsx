@@ -1,20 +1,33 @@
 "use client";
 import React from 'react';
+import { motion } from 'framer-motion';
 
 export default function Contact() {
   return (
-    <section id="contact" className="bg-surface-bright py-section-gap border-t border-border-light">
+    <section id="contact" className="bg-surface-bright py-section-gap border-t border-border-light overflow-hidden">
       <div className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
-        <div className="mb-16 text-center">
+        <motion.div 
+          className="mb-16 text-center"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.2 }}
+          transition={{ duration: 0.6 }}
+        >
           <h2 className="text-display-lg text-text-primary mb-4 font-semibold tracking-tight">Contact</h2>
           <p className="text-body-lg text-text-secondary max-w-xl mx-auto">
             Interested in working together? Reach out to discuss high-impact projects or technical collaborations.
           </p>
-        </div>
+        </motion.div>
 
         <div className="grid grid-cols-1 md:grid-cols-12 gap-12 max-w-5xl mx-auto">
           {/* Contact Info */}
-          <div className="md:col-span-4 space-y-8">
+          <motion.div 
+            className="md:col-span-4 space-y-8"
+            initial={{ opacity: 0, x: -30 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true, amount: 0.2 }}
+            transition={{ duration: 0.6 }}
+          >
             <div>
               <h4 className="text-xs font-bold uppercase tracking-widest text-text-secondary mb-2">Email</h4>
               <a href="mailto:divendraparamendran226@gmail.com" className="text-text-primary font-semibold hover:text-tesla-blue transition-colors">
@@ -36,10 +49,16 @@ export default function Contact() {
                 </a>
               </div>
             </div>
-          </div>
+          </motion.div>
 
           {/* Contact Form */}
-          <div className="md:col-span-8 bg-surface-pure p-8 border border-border-light">
+          <motion.div 
+            className="md:col-span-8 bg-surface-pure p-8 border border-border-light"
+            initial={{ opacity: 0, x: 30 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true, amount: 0.2 }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+          >
             <form className="space-y-6" onSubmit={(e) => e.preventDefault()}>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
@@ -66,12 +85,17 @@ export default function Contact() {
                 <textarea rows={5} className="w-full border border-border-light bg-surface-container-lowest p-3 text-sm focus:outline-none focus:border-black transition-colors" placeholder="How can I help you?" required></textarea>
               </div>
 
-              <button type="submit" className="w-full bg-primary text-on-primary font-bold tracking-widest uppercase text-xs py-4 hover:bg-opacity-90 transition-all flex items-center justify-center gap-2">
+              <motion.button 
+                type="submit" 
+                className="w-full bg-primary text-on-primary font-bold tracking-widest uppercase text-xs py-4 flex items-center justify-center gap-2"
+                whileHover={{ scale: 1.02, backgroundColor: "var(--color-primary)", opacity: 0.9 }}
+                whileTap={{ scale: 0.98 }}
+              >
                 Send Message
                 <span className="material-symbols-outlined text-sm">arrow_forward</span>
-              </button>
+              </motion.button>
             </form>
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>

@@ -48,11 +48,10 @@ const Hero = () => {
             <div className="absolute -inset-4 bg-white/70 border border-border-light rounded-xl"></div>
             <div className="relative bg-surface-pure border border-border-light rounded-xl p-4 shadow-xl shadow-gray-200/60">
               <Image
-                src="/profile-headshot.svg"
+                src="/image.jpg"
                 alt="Professional headshot of Divendra Paramendran"
-                width={640}
-                height={640}
-                preload
+                width={2400}
+                height={2400}
                 unoptimized
                 className="aspect-square w-full rounded-lg object-cover bg-surface-container"
               />

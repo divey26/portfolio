@@ -1,4 +1,6 @@
+"use client";
 import React from 'react';
+import { motion, Variants } from 'framer-motion';
 
 const projects = [
   {
@@ -46,16 +48,37 @@ const projects = [
 ];
 
 export default function Projects() {
+  const containerVariants: Variants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.1,
+      },
+    },
+  };
+
+  const itemVariants: Variants = {
+    hidden: { opacity: 0, y: 30 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } },
+  };
+
   return (
     <section id="projects" className="py-section-gap px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
-      <div className="mb-gutter animate-in fade-in slide-in-from-bottom-4 duration-700">
+      <motion.div 
+        className="mb-gutter"
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, amount: 0.2 }}
+        transition={{ duration: 0.6 }}
+      >
         <h2 className="text-display-lg-mobile md:text-display-lg text-text-primary mb-4">
           Selected <span className="text-tesla-blue">Works</span>
         </h2>
         <p className="text-body-lg text-text-secondary max-w-2xl">
           A portfolio of engineered solutions, cloud architecture, and computational experiments designed with precision and industrial rigor.
         </p>
-      </div>
+      </motion.div>
 
       {/* Filter Bar */}
       <div className="flex flex-wrap items-center gap-4 mb-16">
@@ -74,9 +97,20 @@ export default function Projects() {
       </div>
 
       {/* Project Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
+      <motion.div 
+        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter"
+        variants={containerVariants}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.1 }}
+      >
         {projects.map((project, idx) => (
-          <div key={idx} className="group flex flex-col bg-surface-pure border border-border-light overflow-hidden project-card-hover cursor-pointer opacity-100 translate-y-0">
+          <motion.div 
+            key={idx} 
+            variants={itemVariants}
+            className="group flex flex-col bg-surface-pure border border-border-light overflow-hidden project-card-hover cursor-pointer"
+            whileHover={{ y: -8, transition: { duration: 0.3 } }}
+          >
             <div className="relative h-64 overflow-hidden bg-surface-container">
               <img 
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" 
@@ -102,9 +136,9 @@ export default function Projects() {
                 ))}
               </div>
             </div>
-          </div>
+          </motion.div>
         ))}
-      </div>
+      </motion.div>
     </section>
   );
 }
