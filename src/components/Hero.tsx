@@ -1,37 +1,71 @@
 "use client";
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 import Link from 'next/link';
+import { FaGithub, FaLinkedin } from 'react-icons/fa';
 
 const Hero = () => {
   return (
     <>
-      <section id="hero" className="relative min-h-[90vh] flex flex-col justify-center items-center pt-24 px-margin-mobile airy-grid">
+      <section id="hero" className="relative min-h-[90vh] flex flex-col justify-center pt-24 px-margin-mobile md:px-margin-desktop airy-grid overflow-hidden">
         <motion.div
-          className="relative z-10 max-w-4xl text-center"
+          className="relative z-10 w-full max-w-container-max mx-auto grid grid-cols-1 lg:grid-cols-[minmax(0,1fr)_420px] items-center gap-12 lg:gap-20"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          <div className="inline-block px-4 py-1 bg-surface-container-high rounded-full mb-8">
-            <span className="text-xs font-bold uppercase tracking-widest text-text-secondary">System Ready: Full-Stack Architect</span>
+          <div className="text-center lg:text-left">
+            <div className="inline-block px-4 py-1 bg-surface-container-high rounded-full mb-8">
+              <span className="text-xs font-bold uppercase tracking-widest text-text-secondary">Open to Software Engineering Roles</span>
+            </div>
+            <h1 className="text-display-lg-mobile md:text-[64px] font-semibold text-text-primary mb-6 leading-[1.05] tracking-tight">
+              Full Stack <span className="text-tesla-blue">Software Engineer</span>
+            </h1>
+            <p className="text-body-lg md:text-xl text-text-secondary mb-10 max-w-2xl mx-auto lg:mx-0 leading-relaxed">
+              Building scalable web applications using React, Next.js, Node.js, NestJS, AI, and Cloud technologies.
+            </p>
+            <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-3 max-w-3xl mx-auto lg:mx-0">
+              <a href="/resume.pdf" download className="bg-tesla-blue text-white font-semibold px-6 py-4 rounded flex items-center justify-center gap-2 hover:bg-blue-700 transition-all shadow-lg shadow-tesla-blue/20">
+                <span className="material-symbols-outlined text-lg">download</span>
+                Download Resume
+              </a>
+              <Link href="#projects" className="border border-text-primary text-text-primary font-semibold px-6 py-4 rounded hover:bg-text-primary hover:text-white transition-all flex items-center justify-center gap-2">
+                <span className="material-symbols-outlined text-lg">work</span>
+                View Projects
+              </Link>
+              <a href="https://github.com/divey26" target="_blank" rel="noopener noreferrer" className="border border-border-light bg-white text-text-primary font-semibold px-6 py-4 rounded hover:border-text-primary transition-all flex items-center justify-center gap-2">
+                <FaGithub aria-hidden="true" />
+                GitHub
+              </a>
+              <a href="https://www.linkedin.com/in/diven226" target="_blank" rel="noopener noreferrer" className="border border-border-light bg-white text-text-primary font-semibold px-6 py-4 rounded hover:border-text-primary transition-all flex items-center justify-center gap-2">
+                <FaLinkedin aria-hidden="true" />
+                LinkedIn
+              </a>
+            </div>
           </div>
-          <h1 className="hidden md:block text-[64px] font-semibold text-text-primary mb-6 leading-[1.1] tracking-tight">
-            Engineering <span className="text-tesla-blue">Elegance</span> <br />through Complex Code.
-          </h1>
-          <h1 className="md:hidden text-display-lg-mobile text-text-primary mb-6">
-            Engineering Elegance.
-          </h1>
-          <p className="text-body-lg text-text-secondary mb-12 max-w-2xl mx-auto">
-            Building high-performance, scalable digital environments where machine learning meets meticulous user interface design.
-          </p>
-          <div className="flex flex-col sm:flex-row justify-center gap-4">
-            <Link href="#projects" className="bg-tesla-blue text-white font-semibold px-10 py-4 rounded-full flex items-center justify-center gap-2 hover:bg-blue-700 transition-all shadow-lg shadow-tesla-blue/20">
-              Explore My Work
-              <span className="material-symbols-outlined">arrow_forward</span>
-            </Link>
-            <a href="/resume.pdf" download className="border border-text-primary text-text-primary font-semibold px-10 py-4 rounded-full hover:bg-text-primary hover:text-white transition-all text-center">
-              View Resume
-            </a>
+
+          <div className="relative mx-auto w-full max-w-[360px] lg:max-w-none">
+            <div className="absolute -inset-4 bg-white/70 border border-border-light rounded-xl"></div>
+            <div className="relative bg-surface-pure border border-border-light rounded-xl p-4 shadow-xl shadow-gray-200/60">
+              <Image
+                src="/profile-headshot.svg"
+                alt="Professional headshot of Divendra Paramendran"
+                width={640}
+                height={640}
+                preload
+                unoptimized
+                className="aspect-square w-full rounded-lg object-cover bg-surface-container"
+              />
+              <div className="mt-4 flex items-center justify-between gap-4">
+                <div>
+                  <p className="text-sm font-bold text-text-primary">Divendra Paramendran</p>
+                  <p className="text-xs text-text-secondary">Full Stack Software Engineer</p>
+                </div>
+                <div className="h-10 w-10 rounded bg-tesla-blue text-white flex items-center justify-center">
+                  <span className="material-symbols-outlined text-xl">verified</span>
+                </div>
+              </div>
+            </div>
           </div>
         </motion.div>
 

@@ -16,7 +16,10 @@ export default function Navbar() {
         </Link>
         <div className="hidden md:flex items-center space-x-gutter">
           <Link href="#projects" className="text-sm text-text-primary font-bold border-b-2 border-primary pb-1">
-            Work
+            Projects
+          </Link>
+          <Link href="#experience" className="text-sm text-text-secondary hover:text-text-primary transition-colors">
+            Experience
           </Link>
           <Link href="#skills" className="text-sm text-text-secondary hover:text-text-primary transition-colors">
             Skills
@@ -24,7 +27,7 @@ export default function Navbar() {
           <Link href="#about" className="text-sm text-text-secondary hover:text-text-primary transition-colors">
             About
           </Link>
-          <Link href="mailto:divendraparamendran226@gmail.com" className="text-sm text-text-secondary hover:text-text-primary transition-colors">
+          <Link href="#contact" className="text-sm text-text-secondary hover:text-text-primary transition-colors">
             Contact
           </Link>
           <a href="/resume.pdf" download className="bg-primary text-on-primary px-6 py-2 rounded text-xs font-bold hover:bg-opacity-90 transition-all uppercase tracking-widest flex items-center justify-center border border-primary">
