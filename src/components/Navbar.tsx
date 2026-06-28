@@ -1,53 +1,40 @@
 "use client";
 import Link from 'next/link';
 import { motion } from 'framer-motion';
-import { FiGithub, FiLinkedin, FiMail } from 'react-icons/fi';
-
-const navLinks = [
-  { href: '#hero', label: 'Home' },
-  { href: '#about', label: 'About' },
-  { href: '#skills', label: 'Skills' },
-  { href: '#experience', label: 'Experience' },
-  { href: '#projects', label: 'Projects' },
-  { href: '#education', label: 'Education' },
-];
 
 export default function Navbar() {
   return (
-    <motion.nav
-      className="sticky top-0 z-50 bg-background/80 backdrop-blur-sm border-b border-neutral-800"
+    <motion.header
+      className="fixed top-0 w-full z-50 glass-header border-b border-border-light"
       initial={{ y: -20, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.5 }}
     >
-      <div className="container mx-auto flex items-center justify-between px-4 py-3">
-        <Link href="#hero" className="text-2xl font-bold text-primary">
-          Divendra
+      <nav className="flex justify-between items-center px-margin-mobile md:px-margin-desktop py-unit max-w-container-max mx-auto h-20">
+        <Link href="#hero" className="font-display-lg text-2xl font-bold text-text-primary tracking-tighter">
+          CREATIVE.LAB
         </Link>
-        <ul className="flex space-x-4 text-sm font-medium">
-          {navLinks.map((link) => (
-            <li key={link.href}>
-              <Link
-                href={link.href}
-                className="text-foreground hover:text-primary transition-colors"
-              >
-                {link.label}
-              </Link>
-            </li>
-          ))}
-        </ul>
-        <div className="flex space-x-3 text-foreground">
-          <Link href="mailto:divendraparamendran226@gmail.com" aria-label="Email">
-            <FiMail className="w-5 h-5 hover:text-primary transition-colors" />
+        <div className="hidden md:flex items-center space-x-gutter">
+          <Link href="#projects" className="text-sm text-text-primary font-bold border-b-2 border-primary pb-1">
+            Work
           </Link>
-          <Link href="https://github.com/divey26" target="_blank" aria-label="GitHub">
-            <FiGithub className="w-5 h-5 hover:text-primary transition-colors" />
+          <Link href="#skills" className="text-sm text-text-secondary hover:text-text-primary transition-colors">
+            Skills
           </Link>
-          <Link href="https://www.linkedin.com/in/diven226" target="_blank" aria-label="LinkedIn">
-            <FiLinkedin className="w-5 h-5 hover:text-primary transition-colors" />
+          <Link href="#about" className="text-sm text-text-secondary hover:text-text-primary transition-colors">
+            About
           </Link>
+          <Link href="mailto:divendraparamendran226@gmail.com" className="text-sm text-text-secondary hover:text-text-primary transition-colors">
+            Contact
+          </Link>
+          <a href="/resume.pdf" download className="bg-primary text-on-primary px-6 py-2 rounded text-xs font-bold hover:bg-opacity-90 transition-all uppercase tracking-widest flex items-center justify-center border border-primary">
+            Resume
+          </a>
         </div>
-      </div>
-    </motion.nav>
+        <button className="md:hidden text-text-primary">
+          <span className="material-symbols-outlined">menu</span>
+        </button>
+      </nav>
+    </motion.header>
   );
 }

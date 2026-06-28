@@ -2,12 +2,32 @@ import React from 'react';
 
 const About = () => {
   return (
-    <section id="about" className="py-16 bg-neutral-900 text-foreground">
-      <div className="container mx-auto max-w-4xl px-4">
-        <h2 className="text-3xl font-bold text-primary-500 mb-6 text-center">About Me</h2>
-        <p className="text-lg leading-relaxed text-center">
-          Motivated Software Engineering undergraduate with hands-on experience in full-stack web development, machine learning, and AI-driven applications. Skilled in building scalable systems using modern technologies including React, Next.js, Node.js, and Python-based frameworks. Proven ability to develop and deploy real-world applications through academic projects and industry internship experience. Strong foundation in data structures, system design, and software development life cycle (SDLC), with a growing interest in intelligent systems, career guidance platforms, and data-driven solutions. Passionate about solving real-world problems through technology and continuously learning emerging tools and frameworks.
+    <section id="about" className="py-section-gap px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto bg-surface-bright border-y border-border-light my-12">
+      <div className="max-w-4xl mx-auto text-center flex flex-col items-center">
+        <h2 className="text-headline-md font-bold text-text-primary mb-8 tracking-tight">The Mission</h2>
+        
+        <p className="text-body-lg text-text-secondary leading-relaxed mb-16 max-w-3xl">
+          In an era of digital noise, I advocate for <span className="font-semibold text-text-primary">Precision Minimalism</span>. My work bridges the gap between raw backend capability and intuitive human interaction. I don't just write code; I craft digital artifacts that stand at the intersection of technical discipline and aesthetic purpose.
         </p>
+
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 w-full border-t border-border-light pt-12">
+          <div className="flex flex-col items-center">
+            <span className="text-display-lg text-text-primary font-bold mb-2">4+</span>
+            <span className="text-xs font-bold text-text-secondary uppercase tracking-widest">Years in Tech</span>
+          </div>
+          <div className="flex flex-col items-center">
+            <span className="text-display-lg text-text-primary font-bold mb-2">20+</span>
+            <span className="text-xs font-bold text-text-secondary uppercase tracking-widest">Projects Built</span>
+          </div>
+          <div className="flex flex-col items-center">
+            <span className="text-display-lg text-tesla-blue font-bold mb-2">3</span>
+            <span className="text-xs font-bold text-text-secondary uppercase tracking-widest">Core Disciplines</span>
+          </div>
+          <div className="flex flex-col items-center">
+            <span className="text-display-lg text-text-primary font-bold mb-2">100%</span>
+            <span className="text-xs font-bold text-text-secondary uppercase tracking-widest">Commitment</span>
+          </div>
+        </div>
       </div>
     </section>
   );
