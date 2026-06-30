@@ -55,7 +55,7 @@ export default function Preloader({ onComplete }: PreloaderProps) {
       () => {
         setIndex(index + 1)
       },
-      index === 0 ? 1000 : 246,
+      index === 0 ? 1000 : 200,
     )
   }, [index, onComplete])
 

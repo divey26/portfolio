@@ -4,18 +4,29 @@ import { motion, Variants } from 'framer-motion';
 
 const projects = [
   {
+    title: 'Career Market Trend Analysis',
+    category: 'Research',
+    description: 'Developed the All Trend and Merged Skill module for a career market intelligence platform. Used the Prophet time-series forecasting model to predict skill demand trends.',
+    techStack: ['React', 'Next.js', 'FastAPI', 'Prophet'],
+    image: '/qwerty.png',
+    link: 'https://mentora-tawny.vercel.app/'
+  },
+  {
     title: 'Virtual-Try-on – AI Clothing Simulation',
     category: 'Computer Vision',
     description: 'Designed and developed a virtual try-on system using Python and OpenCV to simulate clothing fit. Implemented deep learning models with TensorFlow for image segmentation and garment overlay.',
     techStack: ['Python', 'OpenCV', 'TensorFlow'],
-    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuD2WY3YMFrb46F2ZX4pyiztPaJ2ML8hk3U5Sp1GXPzqN7BrG7qQS2YMf4FVcn0atu2BG3hFJr0EezRO89ZQWaXXYWLIXXcIu2W9HnoL9beVmlivYj_RqVjLwlv1XZTaz545D3627Sf46vdrO7i96ts2WML1ZSamZOQ1yQb1I_V4Mo0efAkjZrGdEnf-5uMHNAjGQTn-z676ywuQYn4kaaftJDZ8GJrEJiuZJYCbNEmqNy-VxGWpF69ZEaHKSFWjgROaGrpA0xVnNXw'
+    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuD2WY3YMFrb46F2ZX4pyiztPaJ2ML8hk3U5Sp1GXPzqN7BrG7qQS2YMf4FVcn0atu2BG3hFJr0EezRO89ZQWaXXYWLIXXcIu2W9HnoL9beVmlivYj_RqVjLwlv1XZTaz545D3627Sf46vdrO7i96ts2WML1ZSamZOQ1yQb1I_V4Mo0efAkjZrGdEnf-5uMHNAjGQTn-z676ywuQYn4kaaftJDZ8GJrEJiuZJYCbNEmqNy-VxGWpF69ZEaHKSFWjgROaGrpA0xVnNXw',
+    link: 'https://mentora-tawny.vercel.app/',
   },
   {
     title: 'SaniTrack - Sanitation Monitoring',
     category: 'Full-Stack',
     description: 'Developed a sanitation monitoring and issue reporting system with role-based access for Admin, Inspector, and Community users. Built modules to manage villages, facilities, and reported issues.',
     techStack: ['React', 'Node.js', 'MongoDB', 'Express'],
-    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuDhjq0C_F8bmeSQVZ-wOx3-5dzdZPRuRcMn4DLVRS_WxjTksNutHt76d3DhfMuL4ILKeAYpclrrRlIuUMvQIPIE80FZGx_tQnu_mr6Vone_NtMlPjfW6RzWkQtWjmfJhAEZp1tjAS1EnuPxsxQdOsgfSAxqa11UpAjexiOYg99ykifkZchE1Y1DaKAl9WBvz1L3dYyY7bx54SD_ksAiS61vS--GswjYHQ7I9e7gCgqtPHL1VUaSSavJQlFnuK1NBNvOttuOyGwYtWw'
+    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuDhjq0C_F8bmeSQVZ-wOx3-5dzdZPRuRcMn4DLVRS_WxjTksNutHt76d3DhfMuL4ILKeAYpclrrRlIuUMvQIPIE80FZGx_tQnu_mr6Vone_NtMlPjfW6RzWkQtWjmfJhAEZp1tjAS1EnuPxsxQdOsgfSAxqa11UpAjexiOYg99ykifkZchE1Y1DaKAl9WBvz1L3dYyY7bx54SD_ksAiS61vS--GswjYHQ7I9e7gCgqtPHL1VUaSSavJQlFnuK1NBNvOttuOyGwYtWw',
+    link: 'https://mentora-tawny.vercel.app/',
+
   },
   {
     title: 'DeepLearning Labs',
@@ -38,13 +49,7 @@ const projects = [
     techStack: ['Kotlin', 'Android SDK'],
     image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBsQmLC-xr8jwSQoqwl-EyLaTJqIcM2-tLrh0YnScsurTfXWdOq870Ge0KdQehmK13ly4R6Xavo8zrEb9oJh5X6b8alH01c0BIST6LNHKKfBMCuRogDz4yiiG-RenvvdN_8tbVOX6quO0QMvZyji6mAMQFxxp1IRdDjbUxqfM3G4VEAefRQnSJtUP0Fqd3CM6qT_ctHCsd_x9Xl798Qh4aom_m3BbSu95kl5Zkp0MaUH7JLHDmUA1apPg0eonp9u_jqn2K0U8W8mkQ'
   },
-  {
-    title: 'Career Market Trend Analysis',
-    category: 'Research',
-    description: 'Developed the All Trend and Merged Skill module for a career market intelligence platform. Used the Prophet time-series forecasting model to predict skill demand trends.',
-    techStack: ['React', 'Next.js', 'FastAPI', 'Prophet'],
-    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuD2WY3YMFrb46F2ZX4pyiztPaJ2ML8hk3U5Sp1GXPzqN7BrG7qQS2YMf4FVcn0atu2BG3hFJr0EezRO89ZQWaXXYWLIXXcIu2W9HnoL9beVmlivYj_RqVjLwlv1XZTaz545D3627Sf46vdrO7i96ts2WML1ZSamZOQ1yQb1I_V4Mo0efAkjZrGdEnf-5uMHNAjGQTn-z676ywuQYn4kaaftJDZ8GJrEJiuZJYCbNEmqNy-VxGWpF69ZEaHKSFWjgROaGrpA0xVnNXw'
-  }
+
 ];
 
 export default function Projects() {
@@ -65,7 +70,7 @@ export default function Projects() {
 
   return (
     <section id="projects" className="py-section-gap px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
-      <motion.div 
+      <motion.div
         className="mb-gutter"
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -97,7 +102,7 @@ export default function Projects() {
       </div>
 
       {/* Project Grid */}
-      <motion.div 
+      <motion.div
         className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter"
         variants={containerVariants}
         initial="hidden"
@@ -105,16 +110,21 @@ export default function Projects() {
         viewport={{ once: true, amount: 0.1 }}
       >
         {projects.map((project, idx) => (
-          <motion.div 
-            key={idx} 
+          <motion.div
+            key={idx}
             variants={itemVariants}
             className="group flex flex-col bg-surface-pure border border-border-light overflow-hidden project-card-hover cursor-pointer"
             whileHover={{ y: -8, transition: { duration: 0.3 } }}
+            onClick={() => {
+              if ('link' in project && project.link) {
+                window.open(project.link, '_blank');
+              }
+            }}
           >
             <div className="relative h-64 overflow-hidden bg-surface-container">
-              <img 
-                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" 
-                src={project.image} 
+              <img
+                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                src={project.image}
                 alt={project.title}
               />
               <div className="absolute top-4 right-4 z-20">

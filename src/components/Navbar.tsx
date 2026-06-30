@@ -12,7 +12,7 @@ export default function Navbar() {
     >
       <nav className="flex justify-between items-center px-margin-mobile md:px-margin-desktop py-unit max-w-container-max mx-auto h-20">
         <Link href="#hero" className="font-display-lg text-2xl font-bold text-text-primary tracking-tighter">
-          CREATIVE.LAB
+          DIVEN
         </Link>
         <div className="hidden md:flex items-center space-x-gutter">
           <Link href="#projects" className="text-sm text-text-primary font-bold border-b-2 border-primary pb-1">
