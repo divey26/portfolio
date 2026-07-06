@@ -16,7 +16,7 @@ const projects = [
     category: 'Full-Stack',
     description: 'Built a full-stack tool that visualizes backend architecture from uploaded project ZIP files. Features static code analysis for FastAPI and Spring Boot projects with an interactive architecture diagram, endpoint table, and file browser.',
     techStack: ['React', 'Vite', 'FastAPI', 'React Flow'],
-    image: '/archviz.png',
+    image: '/visual.jpeg',
     link: 'https://software-architecture-visualizer-one.vercel.app/'
   },
 
