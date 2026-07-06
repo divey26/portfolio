@@ -12,6 +12,15 @@ const projects = [
     link: 'https://mentora-tawny.vercel.app/'
   },
   {
+    title: 'ArchViz – Software Architecture Visualizer',
+    category: 'Full-Stack',
+    description: 'Built a full-stack tool that visualizes backend architecture from uploaded project ZIP files. Features static code analysis for FastAPI and Spring Boot projects with an interactive architecture diagram, endpoint table, and file browser.',
+    techStack: ['React', 'Vite', 'FastAPI', 'React Flow'],
+    image: '/archviz.png',
+    link: 'https://software-architecture-visualizer-one.vercel.app/'
+  },
+
+  {
     title: 'Virtual-Try-on – AI Clothing Simulation',
     category: 'Computer Vision',
     description: 'Designed and developed a virtual try-on system using Python and OpenCV to simulate clothing fit. Implemented deep learning models with TensorFlow for image segmentation and garment overlay.',
