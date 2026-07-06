@@ -19,6 +19,15 @@ const projects = [
     image: '/visual.jpeg',
     link: 'https://software-architecture-visualizer-one.vercel.app/'
   },
+  {
+    title: 'StudyFlow – AI-Powered Learning Paths',
+    category: 'Full-Stack',
+    description: 'Built a platform that converts raw notes, links, and videos into interactive study maps. Features an interactive canvas with smart auto-layout, AI-driven concept extraction using Gemini, and exportable learning roadmaps.',
+    techStack: ['React', 'NestJS', 'PostgreSQL', 'Gemini AI', 'React Flow'],
+    image: '/mind_map.png',
+    link: 'https://study-flow-ten-gamma.vercel.app/'
+  },
+
 
   {
     title: 'Virtual-Try-on – AI Clothing Simulation',
@@ -38,14 +47,6 @@ const projects = [
 
   },
 
-  {
-    title: 'StudyFlow – AI-Powered Learning Paths',
-    category: 'Full-Stack',
-    description: 'Built a platform that converts raw notes, links, and videos into interactive study maps. Features an interactive canvas with smart auto-layout, AI-driven concept extraction using Gemini, and exportable learning roadmaps.',
-    techStack: ['React', 'NestJS', 'PostgreSQL', 'Gemini AI', 'React Flow'],
-    image: '/mind_map.png',
-    link: 'https://study-flow-ten-gamma.vercel.app/'
-  },
 
   {
     title: 'Splash – Car Game',
