@@ -37,20 +37,16 @@ const projects = [
     link: 'https://mentora-tawny.vercel.app/',
 
   },
+
   {
-    title: 'DeepLearning Labs',
-    category: 'Machine Learning',
-    description: 'Built and trained deep learning models for image classification and recognition tasks. Implemented CNNs and RNNs using PyTorch and TensorFlow frameworks.',
-    techStack: ['PyTorch', 'TensorFlow', 'Python'],
-    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuB4ly2DLBmuEFhQvY8Ph72vFDXeKYG8yjX3V_W7cGV-jAkDIG7BzJq1VClFnNpyK9cZUlHEZahBxYsXiGwQQ_JA0vOOGXTZ7ZmPoaB6X7r3jTPhqMePhmU2sWuhzmYTwfIxE1F6dwElSteCOLaAJiRrq5b8GJ_83gJlh8T8lbWHizg92w2aQ9OxxA2zWw-kfOkMQAfWIrkZr-l9Uo5UQfddc6fHGGmF_ZwP6y2napRK2w7r5OTZRet-9txmasT5_mGlfQbIW5qKc50'
+    title: 'StudyFlow – AI-Powered Learning Paths',
+    category: 'Full-Stack',
+    description: 'Built a platform that converts raw notes, links, and videos into interactive study maps. Features an interactive canvas with smart auto-layout, AI-driven concept extraction using Gemini, and exportable learning roadmaps.',
+    techStack: ['React', 'NestJS', 'PostgreSQL', 'Gemini AI', 'React Flow'],
+    image: '/mind_map.png',
+    link: 'https://study-flow-ten-gamma.vercel.app/'
   },
-  {
-    title: 'Robotics Maze-Solving',
-    category: 'Simulation',
-    description: 'Created a simulation environment for testing maze-solving algorithms. Explored pathfinding strategies such as DFS, BFS, and A* in a robotics-style environment.',
-    techStack: ['C++', 'Python', 'Algorithms'],
-    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuAMb9z18G5vz8qABKXa4qV15ywaFYCoFYNkuCR8cA2keFpA2Ho8bn1r3ohlJ3xIT5uD2kyQZTzMgMccgmYYxhModC4IgezVt_q7NuU46kKkfe8gRdoZnXcyBRvcyb89DytY_03zxJIIjddfRxCZKyKYpN8i5wgzaQxm_bs9CYVpDaG2LcABnjo0g2LZWbv7m3Sn2Zzi_hsBM9U9OM8gIZQ4N72uV1T_jkNOlVm6TcefdwVz5iD0HyjpPIerUuRLhSRGTKjoPJjZfPY'
-  },
+
   {
     title: 'Splash – Car Game',
     category: 'Mobile Dev',
