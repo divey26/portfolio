@@ -4,24 +4,24 @@ import { motion, Variants } from 'framer-motion';
 
 const skillBlocks = [
   {
-    title: 'Backend & System Architecture',
-    description: 'Building resilient, scalable cloud infrastructure and high-throughput APIs for global availability.',
-    tags: ['Node.js', 'Express', 'NestJS', 'Django', 'FastAPI', 'Java', 'C++', 'Go']
-  },
-  {
-    title: 'Frontend Engineering',
-    description: 'Writing clean, maintainable, and type-safe code across the stack with a focus on modern paradigms and minimalist UI.',
-    tags: ['React.js', 'Next.js', 'TypeScript', 'Tailwind CSS', 'Framer Motion']
-  },
-  {
-    title: 'Data & Machine Learning',
+    title: 'AI & Machine Learning',
     description: 'Designing and implementing neural architectures and statistical models for complex predictive tasks.',
-    tags: ['Python', 'PyTorch', 'TensorFlow', 'PostgreSQL', 'MongoDB']
+    tags: ['TensorFlow', 'PyTorch', 'FastAPI', 'Prophet', 'LightGBM', 'OpenCV']
   },
   {
-    title: 'DevOps & Tooling',
-    description: 'Automating deployments and ensuring reliable continuous integration pipelines for robust software delivery.',
-    tags: ['Docker', 'GitHub Actions', 'Google Cloud', 'Git', 'Linux']
+    title: 'Deep Learning & Advanced Techniques',
+    description: 'Strong foundation in advanced artificial intelligence architectures and methodologies.',
+    tags: ['CNNs', 'RNNs', 'Transformers', 'LSTM', 'NLP', 'Reinforcement Learning']
+  },
+  {
+    title: 'Software Engineering',
+    description: 'Building resilient, scalable web applications and robust data pipelines.',
+    tags: ['Python', 'Node.js', 'React', 'Next.js', 'PostgreSQL', 'MongoDB']
+  },
+  {
+    title: 'MLOps & Tooling',
+    description: 'Automating model deployments and ensuring reliable integration into production ecosystems.',
+    tags: ['Docker', 'AWS', 'GitHub Actions', 'Linux']
   }
 ];
 

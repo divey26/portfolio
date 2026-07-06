@@ -16,13 +16,13 @@ const Hero = () => {
         >
           <div className="text-center lg:text-left">
             <div className="inline-block px-4 py-1 bg-surface-container-high rounded-full mb-8">
-              <span className="text-xs font-bold uppercase tracking-widest text-text-secondary">Open to Software Engineering Roles</span>
+              <span className="text-xs font-bold uppercase tracking-widest text-text-secondary">Open to AI/ML Engineering Roles</span>
             </div>
             <h1 className="text-display-lg-mobile md:text-[64px] font-semibold text-text-primary mb-6 leading-[1.05] tracking-tight">
-              Full Stack <span className="text-tesla-blue">Software Engineer</span>
+              Software Engineer <span className="text-tesla-blue">Specializing in Applied ML</span>
             </h1>
             <p className="text-body-lg md:text-xl text-text-secondary mb-10 max-w-2xl mx-auto lg:mx-0 leading-relaxed">
-              Building scalable web applications using React, Next.js, Node.js, NestJS, AI, and Cloud technologies.
+              Architecting end-to-end Machine Learning systems, from robust data pipelines and model training to scalable production deployments.
             </p>
             <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-3 max-w-3xl mx-auto lg:mx-0">
               <a href="/resume.pdf" download className="bg-tesla-blue text-white font-semibold px-6 py-4 rounded flex items-center justify-center gap-2 hover:bg-blue-700 transition-all shadow-lg shadow-tesla-blue/20">
@@ -58,7 +58,7 @@ const Hero = () => {
               <div className="mt-4 flex items-center justify-between gap-4">
                 <div>
                   <p className="text-sm font-bold text-text-primary">Divendra Paramendran</p>
-                  <p className="text-xs text-text-secondary">Full Stack Software Engineer</p>
+                  <p className="text-xs text-text-secondary">AI/ML Engineer</p>
                 </div>
                 <div className="h-10 w-10 rounded bg-tesla-blue text-white flex items-center justify-center">
                   <span className="material-symbols-outlined text-xl">verified</span>
@@ -70,7 +70,7 @@ const Hero = () => {
 
         <div className="absolute bottom-12 left-0 w-full overflow-hidden whitespace-nowrap opacity-40 border-y border-border-light py-4 bg-white/50">
           <div className="inline-block animate-infinite-scroll font-bold text-[10px] tracking-[0.3em] text-text-secondary uppercase">
-            REACT — NEXT.JS — TYPESCRIPT — TAILWIND CSS — NODE.JS — PYTHON — PYTORCH — DOCKER — AWS — KUBERNETES — GRAPHQL — RUST — GO — POSTGRESQL — MONGO — REDIS — REACT — NEXT.JS — TYPESCRIPT — TAILWIND CSS — REACT — NEXT.JS — TYPESCRIPT — TAILWIND CSS
+            PYTHON — PYTORCH — TENSORFLOW — OPENCV — FASTAPI — PROPHET — LIGHTGBM — REACT — NEXT.JS — AWS — DOCKER — POSTGRESQL — PYTHON — PYTORCH — TENSORFLOW — OPENCV — FASTAPI — PROPHET
           </div>
         </div>
       </section>
@@ -87,12 +87,12 @@ const Hero = () => {
               <span className="material-symbols-outlined text-tesla-blue text-5xl mb-6">terminal</span>
             </div>
             <div>
-              <h3 className="text-2xl font-semibold text-text-primary mb-4">System Architecture</h3>
-              <p className="text-body-md text-text-secondary mb-8">Designing high-throughput microservices and resilient cloud infrastructures that scale with your users.</p>
+              <h3 className="text-2xl font-semibold text-text-primary mb-4">ML Infrastructure & Deployment</h3>
+              <p className="text-body-md text-text-secondary mb-8">Designing high-throughput inference APIs and resilient infrastructure to deploy ML models at scale.</p>
               <div className="flex flex-wrap gap-2">
-                <span className="text-[10px] font-bold tracking-tighter text-text-primary bg-surface-container-low px-3 py-1 rounded-full uppercase">Kubernetes</span>
-                <span className="text-[10px] font-bold tracking-tighter text-text-primary bg-surface-container-low px-3 py-1 rounded-full uppercase">Terraform</span>
-                <span className="text-[10px] font-bold tracking-tighter text-text-primary bg-surface-container-low px-3 py-1 rounded-full uppercase">GoLang</span>
+                <span className="text-[10px] font-bold tracking-tighter text-text-primary bg-surface-container-low px-3 py-1 rounded-full uppercase">Docker</span>
+                <span className="text-[10px] font-bold tracking-tighter text-text-primary bg-surface-container-low px-3 py-1 rounded-full uppercase">FastAPI</span>
+                <span className="text-[10px] font-bold tracking-tighter text-text-primary bg-surface-container-low px-3 py-1 rounded-full uppercase">AWS</span>
               </div>
             </div>
           </div>
@@ -116,7 +116,7 @@ const Hero = () => {
           <div className="bg-white p-10 rounded-xl border border-border-light flex flex-col justify-center items-center text-center group transition-shadow hover:shadow-lg">
             <span className="material-symbols-outlined text-text-primary text-3xl mb-4">speed</span>
             <h3 className="font-semibold text-text-primary mb-1">Performance</h3>
-            <p className="text-[11px] font-bold tracking-widest text-text-secondary uppercase">Sub-100ms Latency</p>
+            <p className="text-[11px] font-bold tracking-widest text-text-secondary uppercase">Optimized Inference</p>
           </div>
         </div>
       </section>
